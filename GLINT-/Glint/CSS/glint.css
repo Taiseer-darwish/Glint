@@ -1,0 +1,400 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family:  'Tilt Neon', cursive;
+    font-family: 'Playfair Display', serif;
+
+}
+body{
+    background: linear-gradient(45deg, #a700ff , #4d19db);
+    background: linear-gradient( #3d0c62,#180224,#080010 , #000000);
+
+
+}
+/* ==========================start header ========================== */
+.perant{
+    background-image: url(../imges=G/stars1.png);
+    /*#143668 #07112e*/
+    height: 100vh;
+    width: 100%;
+    padding: 30px;
+}
+
+
+.perant .container {
+    margin: auto;
+    /*padding: 20px;*/
+    position: relative;
+    height: calc(100vh - 65px );
+    max-height: calc(100vh - 65px );
+}
+.perant .container .header .menu{
+    color: aliceblue;
+    font-family: 'Cairo', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    position: absolute;
+    top:0;
+    left: -64px;
+}
+
+.perant .container .header{
+    position:sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 35px;
+    color: antiquewhite;
+    font-family: 'Fredoka One', cursive;
+}
+.logo span{
+    color: #cc5678;
+    margin-left: 3px;
+    font-size: 45px;
+    font-weight: bold;
+}
+.header .NAVIGATION ul{
+    list-style: none;
+    right: 0px;
+    display: inline-block;
+}
+
+.header .NAVIGATION ul li{
+    display: inline;
+    margin: 0 7px;
+
+}
+.Home-1{
+    font-family: 'Cairo', sans-serif;
+    font-size:14px;
+    padding: 0 7px;
+    font-weight: bold;
+    color: #2f005a;
+    border: #ffffff solid 1px;
+    border-radius:10px;
+    background-color: #ffffff;
+}
+.header .NAVIGATION ul li a{
+    text-decoration: none;
+    font-family: 'Cairo', sans-serif;
+    font-size:16px;
+    font-weight: bold;
+    color: #ffff;
+}
+.NAVIGATION ul li a:hover {
+    color: #f9cb26;
+}
+
+/* =============== End Header ============== */
+
+/* =============== Start Landing  ======== */
+
+.container .landng{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    position: absolute;
+    right: 0px;
+    top: 15%;
+    direction: rtl;
+}
+.container .landng .p-home{
+    padding: 6px;
+    width: 100%;
+    animation-name: Home ;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+a{
+  cursor: pointer;
+}
+
+@keyframes Home {
+
+    0%{
+        opacity: 0;
+        margin-top: 50px
+    }
+
+  100%{
+        opacity: 1;
+    }
+   
+}
+
+.container .landng .p-home h3{
+    font-family: 'Cairo', sans-serif;
+    color: #ffffff99;
+    font-size:19px ;
+    letter-spacing: .3rem;
+    margin-top: 3.2rem;
+    margin-bottom: 1.2rem;
+    margin-right: 30px;
+
+}
+.container .landng .p-home h1{
+    font-family: 'Cairo', sans-serif;
+    line-height: 1.666;
+    color: #ffff ;
+    font-size: 45px;
+    word-spacing: 1;
+    margin-right: 26px;
+}
+.container .landng .p-home span{
+    font-family: 'Cairo', sans-serif;
+    line-height: 1.666;
+    color: #f9cb26;
+    font-size: 45px;
+    word-spacing: 1;
+    margin-right: 5px;
+}
+
+
+.container .landng .p-home a{
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #080010 ;
+    border: #ffffff solid 2px;
+    border-radius: 20px;
+    font-family: 'Fredoka One', cursive;
+    font-size: 26px;
+    padding: 5 23px;
+    margin-right: 22px;
+    transition: 0.5s;
+    bottom: 28;
+}
+
+.container .landng .p-home .B{
+    right:  19%;
+}
+.container .landng .p-home a:hover{
+    background-color:transparent;
+    border: #f9cb26 solid 2px;
+    color: #ffffff;
+    transition: 0.5s;
+    transform: scale(1.5);
+}
+.home-social{
+    margin-left: 70px;
+    position: relative;
+
+}
+.home-social img {
+    width: 100%;
+
+}
+.home-social .animation{
+position: absolute;
+left: 0;
+top: 0;
+animation: move 5.5s linear infinite;
+}
+
+@keyframes move{
+    0%{
+        transform: translate(-15px, 0px);
+    }
+
+    50%{
+        transform: translate(0px, -15px);
+    }
+    100%{
+        transform: translate(-15px, 0px);
+
+    }
+}
+/* =========================  End Landing =====================  */
+@media (min-width:165px){
+    .home-social{
+        margin-top: 70px;
+        margin-left: 70px;
+        position: relative;
+        width: 50%;
+    
+    }
+    .logo {
+        font-size: 22px;
+    }
+    .Home-1 {
+        font-size: 11px;
+        padding: 0 6px;
+        border-radius: 8px;
+    }
+    .header .NAVIGATION ul li a {
+        font-size: 12px;
+    }
+    .header .NAVIGATION ul li {
+        margin: 0 2px;
+    }
+    .container .landng{
+        flex-direction: column-reverse;
+        text-align: center;
+
+    }
+    .container .landng .p-home h3{
+        font-size:19px ;
+        color: #ffffff99;
+        margin-right: 0px;
+    }
+    .container .landng .p-home h1{
+        font-size: 25px;
+        margin-right: 0px;
+    }
+    .container .landng .p-home span{
+        font-size:25px;
+    }
+    .container .landng .p-home a {
+        font-size: 13px;
+        bottom: 258px;
+        margin-right: 22px;
+    }
+}
+@media (min-width:445px){
+    .home-social{
+        margin-top: 70px;
+        margin-left: 70px;
+        position: relative;
+        width: 50%;
+    }
+    .header .NAVIGATION ul li a {
+        font-size: 12px;
+    }
+    .header .NAVIGATION ul li {
+        margin: 0 2px;
+    }
+    .container .landng{
+        flex-direction: column-reverse;
+        text-align: center;
+
+    }
+    .container .landng .p-home h3{
+        font-size:19px ;
+        color: #ffffff99;
+        margin-right: 0px;
+    }
+    .container .landng .p-home h1{
+        font-size: 25px;
+        margin-right: 0px;
+    }
+    .container .landng .p-home span{
+        font-size:25px;
+    }
+    .container .landng .p-home a {
+        font-size: 13px;
+        bottom: 258px;
+        margin-right: 22px;
+    }
+}
+
+
+
+@media (min-width:768px) {
+    .home-social{
+        margin-left: 70px;
+        position: relative;
+        width: 70%;
+    
+    }
+    .logo {
+        font-size: 35px;}
+    .header .NAVIGATION ul li a {
+        font-size: 18px;
+    }
+    .Home-1 {
+        font-size: 14px;
+        padding: 0 7px;
+        border-radius: 10px;
+    }
+    
+    .header .NAVIGATION ul li {
+        margin: 0 7px;
+    }
+    .header .NAVIGATION ul li a{
+        font-size: 14px;
+
+    }
+    .container .landng{
+        flex-direction: row-reverse;
+        text-align: right;
+
+    }
+    
+    .container .landng .p-home h3{
+        font-size:19px ;
+        color: #ffffff99;
+        margin-top: 5.2rem;
+        margin-right: 30px;
+    }
+    .container .landng .p-home h1{
+        font-size: 28px;
+        margin-right: 25px;
+    }
+    .container .landng .p-home span{
+        font-size: 24px;
+    }
+    .container .landng .p-home a {
+        font-size: 15px;
+        bottom: -15px;
+        margin-right: 22px;
+
+    }
+}
+
+@media (min-width:992px) {
+    .container .landng .p-home h3{
+        color: #ffffff99;
+        font-size:15px ;
+        margin-top: 7.2rem;
+        margin-bottom: 2.2rem;
+    }
+    .container .landng .p-home h1{
+        font-size: 30px;
+    }
+    .container .landng .p-home span{
+        font-size: 30px;
+    }
+    .container .landng .p-home a {
+        font-size: 21px;
+    }
+}
+
+
+/*   ---------------  @media (min-width:1200px)  -------------  */
+
+@media (min-width:1256px) {
+    .home-social{
+        margin-left: 70px;
+        position: relative;
+        width: 70%;
+    
+    }
+
+    .container .landng .p-home h3{
+        font-size:19px ;
+        color: #ffffff99;
+        margin-top: 3.2rem;
+        margin-bottom: 1.2rem;
+    }
+    .container .landng .p-home h1{
+        font-size: 44px;
+    }
+    .container .landng .p-home span{
+        font-size: 44px;
+    }
+    .container .landng .p-home a {
+        font-size: 26px;
+    }
+}
+
+
+    
+
+
+           
